@@ -1,0 +1,36 @@
+.card_section {
+  background-color: $color-grey-light-1;
+  padding: 0 5rem;
+  &__1 {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.425);
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+    position: relative;
+    &_name {
+      position: absolute;
+      bottom: -5%;
+      left: 20%;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      padding: 1rem 4rem;
+      background-color: $color-secondary;
+      color: $color-grey-light-1;
+    }
+  }
+}
+.card_typography {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 2rem;
+
+  &__1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 3rem;
+    text-align: center;
+  }
+}

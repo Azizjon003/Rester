@@ -1,0 +1,50 @@
+.about__section {
+  padding: 0 6rem;
+  background-color: $color-grey-light-1;
+}
+.masofa {
+  display: block;
+  height: 10rem;
+  background-color: $color-grey-light-1;
+}
+.happy-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &-background {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-grey-dark-1, 0.5),
+        rgba($color-grey-dark-2, 0.5)
+      ),
+      url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 8rem;
+    position: relative;
+    height: 35vh;
+    img {
+      position: absolute;
+      width: 50%;
+      &:first-child {
+        top: 15%;
+        left: 25%;
+        width: 60%;
+      }
+      &:last-child {
+        // width: 40%;
+        top: 50%;
+        right: -5%;
+      }
+    }
+  }
+  &__typography {
+    background-color: $color-grey-light-1;
+    padding: 10rem;
+  }
+}
+.heading-first {
+  font-size: 2.8rem;
+  color: $color-grey-dark-1;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
