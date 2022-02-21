@@ -187,6 +187,11 @@ header {
     margin-top: 5rem;
   }
 }
+@media (max-width: 37.5em) {
+  .freedom_section {
+    margin-left: 4rem;
+  }
+}
 .freedom_section__name {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -266,12 +271,14 @@ header {
 @media (max-width: 37.5em) {
   .freedom_section_1__sponsor {
     grid-template-columns: 1fr 1fr;
+    margin-left: 4rem;
+    margin-bottom: 10rem;
   }
 }
 
 .realtors-section {
   display: grid;
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -290,12 +297,6 @@ header {
 .realtors-section-1 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-}
-@media (max-width: 37.5em) {
-  .realtors-section-1 {
-    align-items: center;
-    justify-content: center;
-  }
 }
 .realtors-section_name {
   font-size: 2.4rem;
@@ -337,7 +338,12 @@ header {
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
+}
+@media (max-width: 37.5em) {
+  .galary_section {
+    gap: 0.5rem;
+  }
 }
 .galary_section img {
   width: 100%;

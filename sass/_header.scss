@@ -33,6 +33,9 @@ header {
   @include responsive(tab_land) {
     margin-top: 5rem;
   }
+  @include responsive(phone) {
+    margin-left: 4rem;
+  }
 
   &__name {
     font-size: 1.6rem;
@@ -102,12 +105,14 @@ header {
     }
     @include responsive(phone) {
       grid-template-columns: 1fr 1fr;
+      margin-left: 4rem;
+      margin-bottom: 10rem;
     }
   }
 }
 .realtors-section {
   display: grid;
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -121,10 +126,6 @@ header {
   &-1 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    @include responsive(phone) {
-      align-items: center;
-      justify-content: center;
-    }
   }
   &_name {
     font-size: 2.4rem;
