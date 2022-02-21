@@ -5,6 +5,10 @@ header {
   background-position: center;
   background-size: cover;
   padding: 10rem 5rem;
+  @include responsive(phone) {
+    width: 100%;
+    padding: 10rem 0rem 0 0rem;
+  }
 }
 .logo {
   text-align: center;

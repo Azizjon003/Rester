@@ -154,6 +154,12 @@ header {
   background-size: cover;
   padding: 10rem 5rem;
 }
+@media (max-width: 37.5em) {
+  header {
+    width: 100%;
+    padding: 10rem 0rem 0 0rem;
+  }
+}
 
 .logo {
   text-align: center;
@@ -512,15 +518,26 @@ footer {
 }
 @media (max-width: 81.5em) {
   .header_menus {
-    width: 98%;
+    width: 9%;
     height: 5rem;
     top: 0;
     text-align: right;
     padding: 0 1rem;
   }
 }
+@media (max-width: 37.5em) {
+  .header_menus {
+    width: 100vw;
+    height: 5rem;
+    top: 0;
+    text-align: right;
+    padding: 0rem;
+  }
+}
 .header_menus i {
+  display: inline-block;
   font-size: 4rem;
+  margin-right: 2rem;
 }
 .header_menus i:hover {
   cursor: pointer;

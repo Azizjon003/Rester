@@ -24,14 +24,23 @@ footer {
   text-align: center;
   color: white;
   @include responsive(tab_land) {
-    width: 98%;
+    width: 9%;
     height: 5rem;
     top: 0;
     text-align: right;
     padding: 0 1rem;
   }
+  @include responsive(phone) {
+    width: 100vw;
+    height: 5rem;
+    top: 0;
+    text-align: right;
+    padding: 0rem;
+  }
   i {
+    display: inline-block;
     font-size: 4rem;
+    margin-right: 2rem;
     &:hover {
       cursor: pointer;
     }
