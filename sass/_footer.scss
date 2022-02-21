@@ -1,0 +1,39 @@
+footer {
+  padding: 10rem;
+  @include responsive(phone) {
+    padding: 5rem;
+  }
+}
+.grid6-1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 3rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  @include responsive(portrait) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.header_menus {
+  width: 7.5rem;
+  height: 418rem;
+  background-color: $color-primary;
+  position: absolute;
+  text-align: center;
+  color: white;
+  @include responsive(tab_land) {
+    width: 98%;
+    height: 5rem;
+    top: 0;
+    text-align: right;
+    padding: 0 1rem;
+  }
+  i {
+    font-size: 4rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

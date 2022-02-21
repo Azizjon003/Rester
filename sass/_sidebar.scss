@@ -19,6 +19,13 @@
       padding: 1rem 4rem;
       background-color: $color-secondary;
       color: $color-grey-light-1;
+      @include responsive(tab_land) {
+        left: 10%;
+        font-size: 1.2rem;
+      }
+      @include responsive(portrait) {
+        left: 20%;
+      }
     }
   }
 }

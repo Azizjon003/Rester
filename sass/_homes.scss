@@ -10,6 +10,12 @@
 .happy-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include responsive(tab_land) {
+    background-color: $color-grey-light-1;
+  }
+  @include responsive(phone) {
+    grid-template-columns: 1fr;
+  }
   &-background {
     background-image: linear-gradient(
         to right,
@@ -29,17 +35,25 @@
         top: 15%;
         left: 25%;
         width: 60%;
+        @include responsive(phone) {
+          width: 50%;
+        }
       }
       &:last-child {
         // width: 40%;
         top: 50%;
         right: -5%;
+        @include responsive(phone) {
+          width: 40%;
+          top: 50%;
+          right: 10%;
+        }
       }
     }
   }
   &__typography {
     background-color: $color-grey-light-1;
-    padding: 10rem;
+    padding: 6rem;
   }
 }
 .heading-first {
